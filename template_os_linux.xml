@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2012-11-29T17:14:52Z</date>
+    <date>2012-12-10T13:18:31Z</date>
     <groups>
         <group>
             <name>Linux</name>
@@ -59,7 +59,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[available]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -98,7 +98,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[buffers]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -137,7 +137,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[cached]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -256,7 +256,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,iowait]</key>
+                    <key>system.cpu.util[,system]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -280,7 +280,49 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Amount of time the CPU has been waiting for I/O to complete.</description>
+                    <description>The time the CPU has spent running the kernel and its processes.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CPU</name>
+                        </application>
+                        <application>
+                            <name>Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>CPU $2 time</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[,nice]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The time the CPU has spent running users' proccess that have been niced.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -340,7 +382,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,system]</key>
+                    <key>system.cpu.util[,interrupt]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -364,49 +406,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>The time the CPU has spent running the kernel and its processes.</description>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>CPU</name>
-                        </application>
-                        <application>
-                            <name>Performance</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                </item>
-                <item>
-                    <name>CPU $2 time</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>system.cpu.util[,steal]</key>
-                    <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>%</units>
-                    <delta>0</delta>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description>The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).</description>
+                    <description>The amount of time the CPU has been servicing hardware interrupts.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -508,7 +508,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,interrupt]</key>
+                    <key>system.cpu.util[,steal]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -532,7 +532,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>The amount of time the CPU has been servicing hardware interrupts.</description>
+                    <description>The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -550,7 +550,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,nice]</key>
+                    <key>system.cpu.util[,iowait]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -574,7 +574,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>The time the CPU has spent running users' proccess that have been niced.</description>
+                    <description>Amount of time the CPU has been waiting for I/O to complete.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -593,7 +593,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[free]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -632,7 +632,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>system.swap.size[,free]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -671,7 +671,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>system.swap.size[,pfree]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -752,7 +752,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>system.localtime</key>
-                    <delay>60</delay>
+                    <delay>600</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -998,7 +998,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>proc.num[]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1202,7 +1202,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[program]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1325,7 +1325,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[total]</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1364,7 +1364,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>system.swap.size[,total]</key>
-                    <delay>3600</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1403,7 +1403,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>vm.memory.size[used]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1442,7 +1442,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>system.swap.size[,used]</key>
-                    <delay>60</delay>
+                    <delay>300</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1700,8 +1700,8 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template OS Linux:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;20</expression>
-                            <name>Free disk space is less than 20% on volume {#FSNAME}</name>
+                            <expression>{Template OS Linux:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;10</expression>
+                            <name>Free disk space is less than 10% on volume {#FSNAME} on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -1710,7 +1710,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template OS Linux:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
-                            <name>Free inodes is less than 20% on volume {#FSNAME}</name>
+                            <name>Free inodes is less than 20% on volume {#FSNAME} on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
@@ -2069,7 +2069,7 @@
     <triggers>
         <trigger>
             <expression>{Template OS Linux:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
-            <name>/etc/passwd has been changed on {HOSTNAME}</name>
+            <name>/etc/passwd has been changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -2079,7 +2079,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:kernel.maxfiles.last(0)}&lt;1024</expression>
-            <name>Configured max number of opened files is too low on {HOSTNAME}</name>
+            <name>Configured max number of opened files is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>1</priority>
@@ -2089,7 +2089,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:kernel.maxproc.last(0)}&lt;256</expression>
-            <name>Configured max number of processes is too low on {HOSTNAME}</name>
+            <name>Configured max number of processes is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>1</priority>
@@ -2099,7 +2099,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:system.cpu.util[,iowait].avg(600)}&gt;20</expression>
-            <name>Disk I/O is overloaded on {HOSTNAME}</name>
+            <name>Disk I/O is overloaded on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -2109,7 +2109,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:system.uname.diff(0)}&gt;0</expression>
-            <name>Host information was changed on {HOSTNAME}</name>
+            <name>Host information was changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>1</priority>
@@ -2119,7 +2119,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:system.hostname.diff(0)}&gt;0</expression>
-            <name>Hostname was changed on {HOSTNAME}</name>
+            <name>Hostname was changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>1</priority>
@@ -2129,7 +2129,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:vm.memory.size[available].last(0)}&lt;20M</expression>
-            <name>Lack of available memory on server {HOSTNAME}</name>
+            <name>Lack of available memory on server {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -2138,8 +2138,18 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template OS Linux:system.swap.size[,total].last(0)}&gt;0 &amp; {Template OS Linux:system.swap.size[,pfree].last(0)}&lt;50</expression>
-            <name>Lack of free swap space on {HOSTNAME}</name>
+            <expression>{Template OS Linux:system.localtime.fuzzytime(6)}=0</expression>
+            <name>Local time of {HOST.NAME} differs from Zabbix server time in more than 6 seconds</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template OS Linux:system.swap.size[,total].last(0)}&gt;0 &amp; {Template OS Linux:system.swap.size[,pfree].last(0)}&lt;25</expression>
+            <name>More that 75% of swap space is in use {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -2149,7 +2159,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:system.cpu.load[percpu,avg5].last(0)}&gt;10</expression>
-            <name>Processor load is too high on {HOSTNAME}</name>
+            <name>Processor load is too high on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -2159,7 +2169,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:proc.num[].last(0)}&gt;300</expression>
-            <name>Too many processes on {HOSTNAME}</name>
+            <name>Too many processes on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -2169,7 +2179,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:proc.num[,,run].last(0)}&gt;30</expression>
-            <name>Too many processes running on {HOSTNAME}</name>
+            <name>Too many processes running on {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -2179,7 +2189,7 @@
         </trigger>
         <trigger>
             <expression>{Template OS Linux:system.uptime.change(0)}&lt;0</expression>
-            <name>{HOSTNAME} has just been restarted</name>
+            <name>{HOST.NAME} has just been restarted</name>
             <url/>
             <status>0</status>
             <priority>1</priority>
