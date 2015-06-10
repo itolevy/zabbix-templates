@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2013-02-08T11:28:29Z</date>
+    <date>2015-06-10T20:26:12Z</date>
     <groups>
-        <group>
-            <name>Applications</name>
-        </group>
         <group>
             <name>Templates</name>
         </group>
@@ -15,9 +12,6 @@
             <template>Template .NET Memory</template>
             <name>Template .NET Memory</name>
             <groups>
-                <group>
-                    <name>Applications</name>
-                </group>
                 <group>
                     <name>Templates</name>
                 </group>
@@ -35,17 +29,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Gen 0 Collections]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>colect/s</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -74,17 +71,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\Gen 0 heap size]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -113,17 +113,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Gen 1 Collections]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>colect/s</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -152,17 +155,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\Gen 1 heap size]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -191,17 +197,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Gen 2 Collections]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>colect/s</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -230,17 +239,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\Gen 2 heap size]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -269,17 +281,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Induced GC]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>colect/s</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -308,17 +323,20 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\Large Object Heap size]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -348,17 +366,20 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\% Time in GC]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>60</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -387,17 +408,20 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Total committed Bytes]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -426,17 +450,20 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Total reserved Bytes]</key>
-                    <delay>4</delay>
-                    <history>90</history>
+                    <delay>120</delay>
+                    <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -464,7 +491,7 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
             <templates/>
             <screens>
                 <screen>
-                    <name>.NET Memory - {$NET_APP_NAME}</name>
+                    <name>.NET Memory</name>
                     <hsize>1</hsize>
                     <vsize>4</vsize>
                     <screen_items>
@@ -487,6 +514,7 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                                 <name>.NET Memory - Heap size</name>
                                 <host>Template .NET Memory</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
@@ -507,6 +535,7 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                                 <name>.NET Memory - Time in GC</name>
                                 <host>Template .NET Memory</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
@@ -527,6 +556,7 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                                 <name>.NET Memory - Committed Memory</name>
                                 <host>Template .NET Memory</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
@@ -547,6 +577,7 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                                 <name>.NET Memory - GC Collections</name>
                                 <host>Template .NET Memory</host>
                             </resource>
+                            <application/>
                         </screen_item>
                     </screen_items>
                 </screen>
@@ -555,11 +586,11 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template .NET Memory:perf_counter[\.NET CLR Memory({$NET_APP_NAME})\% Time in GC].min(300)}&gt;80</expression>
+            <expression>{Template .NET Memory:perf_counter[\.NET CLR Memory({$NET_APP_NAME})\% Time in GC].min(900)}&gt;80 &amp; {Template .NET Memory:perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Total committed Bytes].max(900)}&gt;1G</expression>
             <name>{$NET_APP_NAME} GC on {HOST.NAME} in fire fighting mode</name>
             <url/>
             <status>0</status>
-            <priority>3</priority>
+            <priority>2</priority>
             <description/>
             <type>0</type>
             <dependencies/>
@@ -641,15 +672,15 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>3</sortorder>
-                    <drawtype>2</drawtype>
-                    <color>EE0000</color>
-                    <yaxisside>1</yaxisside>
+                    <sortorder>2</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>3333FF</color>
+                    <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template .NET Memory</host>
-                        <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Induced GC]</key>
+                        <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Gen 2 Collections]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -665,15 +696,15 @@ http://msdn.microsoft.com/en-us/magazine/cc534993.aspx</description>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>2</sortorder>
-                    <drawtype>1</drawtype>
-                    <color>3333FF</color>
-                    <yaxisside>0</yaxisside>
+                    <sortorder>3</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>EE0000</color>
+                    <yaxisside>1</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template .NET Memory</host>
-                        <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Gen 2 Collections]</key>
+                        <key>perf_counter[\.NET CLR Memory({$NET_APP_NAME})\# Induced GC]</key>
                     </item>
                 </graph_item>
             </graph_items>
